@@ -5,16 +5,16 @@ main {
     width: 100%;
     height: auto;
     padding-top: 150px;
-    overflow-X: hidden;
 }
 
 .card{
+    border-color: rgb(209, 41, 41);
     border-radius: 16px;
     align-items: top;
     flex-direction: column;
     justify-content: center;
     display: flex;
-    width: 80%;
+    width: 90%;
     height: auto;
     background-color: #E0E0E0;
     color:black;

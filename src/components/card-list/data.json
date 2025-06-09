@@ -1,0 +1,12 @@
+{
+    "pop": [
+        { "img": "src/assets/billie-eilish.jpg", "name": "Billie Eilish" },
+        { "img": "src/assets/olivia-rodrigo.jpg", "name": "Olivia Rodrigo" },
+        { "img": "src/assets/taylor-swift.jpg", "name": "Taylor Swift" }
+    ],
+    "rock": [
+        { "img": "src/assets/queen.jpg", "name": "Queen" },
+        { "img": "src/assets/led-zeppelin.jpg", "name": "Led Zeppelin" },
+        { "img": "src/assets/pink-floyd.jpg", "name": "Pink Floyd" }
+    ]
+}
