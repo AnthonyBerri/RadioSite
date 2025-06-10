@@ -11,6 +11,7 @@ class MainComponent extends HTMLElement {
     connectedCallback() {
         const currentPage = document.title;
         const main = this.shadowRoot.querySelector('main');
+        console.log('document.title:', currentPage); // Log para debug
         switch(currentPage) {
             case 'LoveFM':
                 main.innerHTML = `
@@ -25,6 +26,8 @@ class MainComponent extends HTMLElement {
                         <card-list-component></card-list-component>
                     </div>`;
                 break;
+            default:
+                main.innerHTML = `<p style='color:red'>Página não reconhecida: ${currentPage}</p>`;
         }
     }
 }
