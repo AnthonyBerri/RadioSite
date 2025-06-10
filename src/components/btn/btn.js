@@ -17,7 +17,7 @@ class BtnComponent extends HTMLElement {
             case 'change-page-pop':
                 menuBtn.textContent = "Pop List";
                 menuBtn.addEventListener('click', () => {
-                    window.location.href = 'src/pages/pop/pop.html';
+                    window.location.href = '../../pages/pop/pop.html';
                 });
                 break;
             case 'logout':
