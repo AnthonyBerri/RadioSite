@@ -9,7 +9,7 @@ class MainComponent extends HTMLElement {
     `;
     }
     connectedCallback() {
-        const currentPage = window.title;
+        const currentPage = document.title;
         const main = this.shadowRoot.querySelector('main');
         switch(currentPage) {
             case 'LoveFM':
@@ -23,7 +23,6 @@ class MainComponent extends HTMLElement {
                     <div class="card" id="card">
                         <h1>Pop List</h1>
                         <card-list-component></card-list-component>
-                        </div>
                     </div>`;
                 break;
         }
