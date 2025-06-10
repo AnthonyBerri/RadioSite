@@ -9,25 +9,22 @@ class MainComponent extends HTMLElement {
     `;
     }
     connectedCallback() {
-        const currentPage = document.title;
+        const currentPage = document.title.trim().toLowerCase();
         const main = this.shadowRoot.querySelector('main');
         console.log('document.title:', currentPage); // Log para debug
-        switch(currentPage) {
-            case 'LoveFM':
-                main.innerHTML = `
-                    <div class="card" id="card">
-                        <btn-component action="change-page-pop"></btn-component>
-                    </div>`;
-                break;
-            case 'LoveFM - Pop':
-                main.innerHTML = `
-                    <div class="card" id="card">
-                        <h1>Pop List</h1>
-                        <card-list-component></card-list-component>
-                    </div>`;
-                break;
-            default:
-                main.innerHTML = `<p style='color:red'>Página não reconhecida: ${currentPage}</p>`;
+        if (currentPage.includes('lovefm') && !currentPage.includes('pop')) {
+            main.innerHTML = `
+                <div class="card" id="card">
+                    <btn-component action="change-page-pop"></btn-component>
+                </div>`;
+        } else if (currentPage.includes('pop')) {
+            main.innerHTML = `
+                <div class="card" id="card">
+                    <h1>Pop List</h1>
+                    <card-list-component></card-list-component>
+                </div>`;
+        } else {
+            main.innerHTML = `<p style='color:red'>Página não reconhecida: ${currentPage}</p>`;
         }
     }
 }
