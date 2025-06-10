@@ -9,16 +9,16 @@ class MainComponent extends HTMLElement {
     `;
     }
     connectedCallback() {
-        const currentUrl = window.location.href;
+        const currentPage = window.title;
         const main = this.shadowRoot.querySelector('main');
-        switch(currentUrl) {
-            case 'src/index.html':
+        switch(currentPage) {
+            case 'LoveFM':
                 main.innerHTML = `
                     <div class="card" id="card">
                         <btn-component action="change-page-pop"></btn-component>
                     </div>`;
                 break;
-            case 'src/pages/pop/pop.html':
+            case 'LoveFM - Pop':
                 main.innerHTML = `
                     <div class="card" id="card">
                         <h1>Pop List</h1>
