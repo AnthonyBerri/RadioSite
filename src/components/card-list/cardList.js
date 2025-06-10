@@ -4,7 +4,7 @@ class CardComponent extends HTMLElement {
         this.attachShadow({ mode: 'open' });
         const shadow = this.shadowRoot;
         shadow.innerHTML =`
-        <link rel="stylesheet" href="/src/components/card-list/cardList.css">    
+        <link rel="stylesheet" href="src/components/card-list/cardList.css">    
         <div class="card-list">
         </div>
     `;
@@ -15,7 +15,7 @@ class CardComponent extends HTMLElement {
 
         let data = { pop: [], rock: [] };
 
-        fetch('/src/components/card-list/data.json')
+        fetch('src/components/card-list/data.json')
             .then(response => response.json())
             .then(jsonData => {
                 data = jsonData;

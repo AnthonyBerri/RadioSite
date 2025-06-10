@@ -3,7 +3,7 @@ class MainComponent extends HTMLElement {
     super();
     const shadow = this.attachShadow({ mode: 'open' });
     shadow.innerHTML =`
-    <link rel="stylesheet" href="/src/components/main/mainCard.css">    
+    <link rel="stylesheet" href="src/components/main/mainCard.css">    
     <main>
     </main>
     `;
@@ -12,13 +12,13 @@ class MainComponent extends HTMLElement {
         const currentUrl = window.location.href;
         const main = this.shadowRoot.querySelector('main');
         switch(currentUrl) {
-            case 'http://127.0.0.1:5500/index.html':
+            case 'src/index.html':
                 main.innerHTML = `
                     <div class="card" id="card">
                         <btn-component action="change-page-pop"></btn-component>
                     </div>`;
                 break;
-            case 'http://127.0.0.1:5500/src/pages/pop/pop.html':
+            case 'src/pages/pop/pop.html':
                 main.innerHTML = `
                     <div class="card" id="card">
                         <h1>Pop List</h1>
