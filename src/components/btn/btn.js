@@ -3,7 +3,7 @@ class BtnComponent extends HTMLElement {
     super();
     const shadow = this.attachShadow({ mode: 'open' });
     shadow.innerHTML =`
-        <link rel="stylesheet" href="src/components/btn/btn.css">
+        <link rel="stylesheet" href="btn.css">
         <div class="btn-container">
             <button class="the-btn">
                 <a href="#" id="btn-link"></a>
