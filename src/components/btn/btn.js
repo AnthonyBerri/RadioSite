@@ -3,7 +3,7 @@ class BtnComponent extends HTMLElement {
     super();
     const shadow = this.attachShadow({ mode: 'open' });
     shadow.innerHTML =`
-        <link rel="stylesheet" href="/src/components/btn/btn.css">
+        <link rel="stylesheet" href="src/components/btn/btn.css">
         <div class="btn-container">
             <button class="the-btn">
                 <a href="#" id="btn-link"></a>
@@ -17,7 +17,7 @@ class BtnComponent extends HTMLElement {
             case 'change-page-pop':
                 menuBtn.textContent = "Pop List";
                 menuBtn.addEventListener('click', () => {
-                    window.location.href = '/src/pages/pop/pop.html';
+                    window.location.href = 'src/pages/pop/pop.html';
                 });
                 break;
             case 'logout':
