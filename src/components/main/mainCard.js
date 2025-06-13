@@ -3,7 +3,7 @@ class MainComponent extends HTMLElement {
     super();
     const shadow = this.attachShadow({ mode: 'open' });
     shadow.innerHTML =`
-    <link rel="stylesheet" href="../../mainCard.css">    
+    <link rel="stylesheet" href="../../main/mainCard.css">    
     <main>
     </main>
     `;
