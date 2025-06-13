@@ -22,7 +22,6 @@ class BtnComponent extends HTMLElement {
                 break;
             case 'logout':
                 // Exemplo: fazer logout
-                alert('Logout!');
                 break;
             case 'favoritar':
                 // Exemplo: favoritar item

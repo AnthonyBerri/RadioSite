@@ -20,7 +20,7 @@ class CardComponent extends HTMLElement {
             .then(jsonData => {
                 data = jsonData;
 
-                let page = 'pop';
+                let page = '';
                 if (url.includes('pop')) page = 'pop';
                 if (url.includes('rock')) page = 'rock';
 
@@ -28,7 +28,7 @@ class CardComponent extends HTMLElement {
                     <div class="card-item">
                         <img src="${item.img}" alt="${item.name}">
                         <h2>${item.name}</h2>
-                        <btn-component action="logout"></btn-component>
+                        <btn-component></btn-component>
                     </div>
                 `).join('');
                 this.shadowRoot.innerHTML = `

@@ -18,7 +18,7 @@ class HeaderComponent extends HTMLElement {
     
             <div class="sidebar">
                 <ul>               
-                    <li><a href="../../pages/home/index.html"><i class="bi bi-house"></i> Home</a></li>
+                    <li><a href="../../pages/home/home.html"><i class="bi bi-house"></i> Home</a></li>
                     <li><a href="#"><i class="bi bi-star"></i> Favoritos</a></li>
                     <li><a href="#"><i class="bi bi-question-circle"></i> Sobre o projeto</a></li>
 
